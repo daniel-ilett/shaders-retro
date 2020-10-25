@@ -364,6 +364,7 @@ GameObject:
   - component: {fileID: 834748257}
   - component: {fileID: 834748256}
   - component: {fileID: 834748255}
+  - component: {fileID: 834748259}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -445,6 +446,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834748259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834748254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5714a75c2954b1d46bce274382731a8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 834748256}
+  materials:
+  - {fileID: 2100000, guid: e70ad3e81b6ee504abb63a91b95ed8a1, type: 2}
+  - {fileID: 2100000, guid: fb7188e4cc9c39648836f47e42202b16, type: 2}
 --- !u!1 &1145444333
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +757,7 @@ GameObject:
   - component: {fileID: 1687258582}
   - component: {fileID: 1687258583}
   - component: {fileID: 1687258586}
+  - component: {fileID: 1687258587}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -883,6 +901,21 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1687258587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687258581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb98f97aa1295744fb51fb8344655512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitObject: {fileID: 834748258}
+  orbitSize: 1.5
+  orbitOffset: 0.5
 --- !u!1 &1904166338
 GameObject:
   m_ObjectHideFlags: 0
